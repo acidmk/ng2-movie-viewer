@@ -1,0 +1,8 @@
+<div *ngIf="movie" class="media">
+    <img class="d-flex mr-3" src="{{ poster }}" alt="Generic placeholder image">
+    <div class="media-body">
+        <h5 class="mt-0">{{ title }}</h5>
+        <p>{{ overview }}</p>
+        <movie-details-rating [currentRate]="currentRate"></movie-details-rating>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="list-group">
+    <movie-list-item 
+        *ngFor="let movie of movies"         
+        [movie]="movie" 
+        [selected]="isSelected(movie)"
+        (click)="select.emit(movie)">
+    </movie-list-item>
+</div>
